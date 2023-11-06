@@ -1,7 +1,7 @@
 # Prisma CLI
 
 The aim of this project is to make prisma's CLI available without prior installation or build.  
-I allows you to use the CLI on a non supported architecture.
+It allows you to use the CLI on a non supported architecture.
 
 ## Getting started
 
