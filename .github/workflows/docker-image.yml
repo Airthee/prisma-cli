@@ -9,9 +9,11 @@ on:
 jobs:
 
   build:
-
-    runs-on: [ubuntu-latest, ARM64]
-
+    strategy:
+      matrix:
+        runner: [ubuntu-latest, ARM64]
+        
+    runs-on: ${{ matrix.runner }}
     steps:
     - uses: actions/checkout@v3
     - name: Docker Login
